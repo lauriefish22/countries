@@ -1,7 +1,6 @@
 /* Imports */
 // Slice A: import getCountries from fetch-utils.js
 import { getCountries, getContinents } from './fetch-utils.js';
-
 // Slice B: import getContinents from fetch-utils.js
 
 import { renderContinentOption, renderCountry } from './render-utils.js';
@@ -52,7 +51,7 @@ searchForm.addEventListener('submit', (e) => {
 
 /* Display Functions */
 function displayCountries() {
-    //Slice A: reset the countries List
+    //Slice A: reset the countries
     countryList.textContent = '';
 
     for (const country of countries) {
